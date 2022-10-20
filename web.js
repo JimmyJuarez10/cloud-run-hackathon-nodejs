@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-
+let index = 0;
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
@@ -13,8 +13,11 @@ app.post('/', function (req, res) {
   const moves = ['F', 'T', 'L', 'R'];
   
   // TODO add your implementation here to replace the random response
-  
-  res.send('F');
+  if(moves >= 4){
+    index = 0
+  }
+  const next_move = moves++;
+  res.send(moves[i]);
 });
 
 app.listen(process.env.PORT || 8080);
