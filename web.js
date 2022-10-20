@@ -13,10 +13,10 @@ app.post('/', function (req, res) {
   const moves = ['F', 'T', 'L', 'R'];
   
   // TODO add your implementation here to replace the random response
-  if(moves >= 4){
-    index = 0
+  if(index >= 4){
+    index = 0;
   }
-  const next_move = moves++;
+  index++;
   res.send(moves[index]);
 });
 
