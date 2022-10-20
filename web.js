@@ -17,7 +17,7 @@ app.post('/', function (req, res) {
     index = 0
   }
   const next_move = moves++;
-  res.send(moves[i]);
+  res.send(moves[index]);
 });
 
 app.listen(process.env.PORT || 8080);
