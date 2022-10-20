@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 
 app.post('/', function (req, res) {
   console.log(req.body);
-  const moves = ['F','T'];
+  const moves = ['F','T','R','L'];
   index++
   if(index >= moves.length){
     index = 0
