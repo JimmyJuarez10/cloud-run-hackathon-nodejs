@@ -14,7 +14,7 @@ app.post('/', function (req, res) {
   
   // TODO add your implementation here to replace the random response
   
-  res.send('T');
+  res.send('F');
 });
 
 app.listen(process.env.PORT || 8080);
