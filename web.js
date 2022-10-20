@@ -13,7 +13,7 @@ app.post('/', function (req, res) {
   const moves = ['F', 'T', 'L', 'R'];
   
   // TODO add your implementation here to replace the random response
-  if(index >= 4){
+  if(index >= 3){
     index = 0;
   }
   index++;
